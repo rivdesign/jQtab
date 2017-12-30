@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>jQuery URI Tab</title>
+  <style>
+    body {
+      background: #fafafa;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    .container { max-width: 1024px; margin: 0 auto;}
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div id="tabs">
+      <div class="tab_menu">
+        <ul>
+          <li><a href="#tab1"><span>Tab 1</span></a></li>
+          <li><a href="#tab2"><span>Tab 2</span></a></li>
+          <li><a href="#tab3"><span>Tab 3</span></a></li>
+        </ul>
+      </div>
+      <div class="tab_content">
+        <div id="tab1" class="tab_item">
+          <h3>Tab 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a ultrices quam, sit amet dapibus nisi. Aenean ornare vulputate odio, vel aliquet lectus elementum nec. Praesent vitae ipsum quis tortor rutrum congue. Praesent pharetra cursus eros ut faucibus. Suspendisse potenti. Morbi felis lectus, facilisis in convallis ut, aliquam vel dolor. Nullam sed nulla mi. Morbi dapibus lectus eu mollis pretium. Nam pellentesque quam vitae porttitor pellentesque. Vivamus rhoncus condimentum volutpat. Maecenas eu sagittis neque. Integer pharetra egestas luctus. Vestibulum finibus cursus aliquet. In condimentum tincidunt ligula, ac gravida dui mollis placerat.</p>
+
+          <p>Aenean egestas lorem vel tellus dictum dignissim. Praesent mollis, lorem sit amet tempus varius, neque justo vestibulum nunc, sit amet consectetur lectus urna non nulla. Pellentesque bibendum imperdiet eros ullamcorper pulvinar. Vivamus vehicula semper massa tincidunt laoreet. Quisque nec tellus tristique, ullamcorper dolor sed, aliquet leo. Aenean varius molestie tincidunt. Nam sit amet gravida nisl. Sed eleifend, felis quis efficitur consectetur, ante ante iaculis mauris, at luctus arcu libero ut mauris. In elementum mi ligula, a congue elit convallis at. Praesent a orci feugiat, blandit quam in, suscipit diam.</p>
+        </div>
+        <div id="tab2" class="tab_item">
+          <h3>Tab 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a ultrices quam, sit amet dapibus nisi. Aenean ornare vulputate odio, vel aliquet lectus elementum nec. Praesent vitae ipsum quis tortor rutrum congue. Praesent pharetra cursus eros ut faucibus. Suspendisse potenti. Morbi felis lectus, facilisis in convallis ut, aliquam vel dolor. Nullam sed nulla mi. Morbi dapibus lectus eu mollis pretium. Nam pellentesque quam vitae porttitor pellentesque. Vivamus rhoncus condimentum volutpat. Maecenas eu sagittis neque. Integer pharetra egestas luctus. Vestibulum finibus cursus aliquet. In condimentum tincidunt ligula, ac gravida dui mollis placerat.</p>
+
+          <p>Aenean egestas lorem vel tellus dictum dignissim. Praesent mollis, lorem sit amet tempus varius, neque justo vestibulum nunc, sit amet consectetur lectus urna non nulla. Pellentesque bibendum imperdiet eros ullamcorper pulvinar. Vivamus vehicula semper massa tincidunt laoreet. Quisque nec tellus tristique, ullamcorper dolor sed, aliquet leo. Aenean varius molestie tincidunt. Nam sit amet gravida nisl. Sed eleifend, felis quis efficitur consectetur, ante ante iaculis mauris, at luctus arcu libero ut mauris. In elementum mi ligula, a congue elit convallis at. Praesent a orci feugiat, blandit quam in, suscipit diam.</p>
+        </div>
+        <div id="tab3" class="tab_item">
+          <h3>Tab 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a ultrices quam, sit amet dapibus nisi. Aenean ornare vulputate odio, vel aliquet lectus elementum nec. Praesent vitae ipsum quis tortor rutrum congue. Praesent pharetra cursus eros ut faucibus. Suspendisse potenti. Morbi felis lectus, facilisis in convallis ut, aliquam vel dolor. Nullam sed nulla mi. Morbi dapibus lectus eu mollis pretium. Nam pellentesque quam vitae porttitor pellentesque. Vivamus rhoncus condimentum volutpat. Maecenas eu sagittis neque. Integer pharetra egestas luctus. Vestibulum finibus cursus aliquet. In condimentum tincidunt ligula, ac gravida dui mollis placerat.</p>
+
+          <p>Aenean egestas lorem vel tellus dictum dignissim. Praesent mollis, lorem sit amet tempus varius, neque justo vestibulum nunc, sit amet consectetur lectus urna non nulla. Pellentesque bibendum imperdiet eros ullamcorper pulvinar. Vivamus vehicula semper massa tincidunt laoreet. Quisque nec tellus tristique, ullamcorper dolor sed, aliquet leo. Aenean varius molestie tincidunt. Nam sit amet gravida nisl. Sed eleifend, felis quis efficitur consectetur, ante ante iaculis mauris, at luctus arcu libero ut mauris. In elementum mi ligula, a congue elit convallis at. Praesent a orci feugiat, blandit quam in, suscipit diam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <link type="text/css" rel="stylesheet" href="jQtab-1.0.css" />
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="jQtab-1.0.js"></script>
+  <script type="text/javascript">
+    $("#tabs").urijqtab({
+      handler : ".tab_menu",
+      item    : ".tab_item"
+    });
+  </script>
+</body>
+</html>

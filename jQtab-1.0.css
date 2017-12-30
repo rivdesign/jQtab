@@ -1,0 +1,20 @@
+.tab_menu ul { margin: 1em 0 -1px; padding: 0; list-style: none;}
+.tab_menu ul:after { display: table; content: " "; clear: both;}
+.tab_menu li { display: block; float: left;}
+.tab_menu a {
+  display: block;
+  background: #e6e6e6;
+  padding: .5em 1.2em;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-right-width: 0;
+}
+.tab_menu li:last-child a { border-right-width: 1px;}
+.tab_menu li.active a { background: #fff;}
+
+.tab_item {
+  background: #fff;
+  padding: 1.2em;
+  border: 1px solid #ccc;
+}
